@@ -6,7 +6,7 @@ import { Syringe, Shield, Calendar, Users, MapPin, FileText, ChevronDown, Menu, 
 export default function VacinaBrasil() {
   const [activeSection, setActiveSection] = useState('inicio');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeFaq, setActiveFaq] = useState(null);
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [searchCep, setSearchCep] = useState('');
   const [selectedState, setSelectedState] = useState('');
 
